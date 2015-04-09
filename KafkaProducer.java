@@ -9,9 +9,6 @@ public class KafkaProducer {
 
     public static void main(String[] args){
 
-        long events = 5;
-        Random rnd = new Random();
-
         Properties props = new Properties();
         props.put("metadata.broker.list", "localhost:9092");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
